@@ -1,0 +1,83 @@
+.circular-chart, .circular-chart2, .circular-chart3 {
+
+}
+
+.circle-animate{
+    animation: progress;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    box-shadow: 0 0 2px #040404;
+    visibility: hidden;
+    stroke-dasharray:0 100;
+}
+
+.circle-highlight {
+    fill: none;
+    stroke-width: 4px;
+    stroke-linecap: butt;
+    opacity: .1;
+}
+
+/*.circle1 {
+    stroke: #ff56ef;
+}*/
+
+/*.circle2 {
+    stroke: red;
+}*/
+
+.circle3 {
+    stroke: blue;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.rings-wrapper{
+    width: 180px;
+    height: 180px;
+    margin: 15px auto;
+}
+
+.box{
+    width: 5px;
+    position: absolute;
+    height: 20px;
+    border: 1px solid #CCCCCC;
+}
+
+.box-training{
+    background-color: #b10205;
+    stroke: #b10001;
+    border: .7px solid #020c10;
+}
+.box-engage{
+     background-color: #8ed608;
+     stroke: #8ed608;
+ }
+.box-other{
+    background-color: #11a1d6;
+    stroke: #11a1d6;
+}
+
+
+input.pin{
+    font-size: 3vh !important;
+    height: 100%;
+    float: left;
+    /* margin: 0 2px 0 2px; */
+    margin: 0;
+    padding: 0;
+}

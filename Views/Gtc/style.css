@@ -1,0 +1,54 @@
+
+/*.my_advertisement .left{float: left;width: 50%;position: relative;height: 100%;}
+
+.my_advertisement .left .content-top{height: 50%;background-repeat:no-repeat;width: 100%;background-size: contain; background-position: center center;}
+.my_advertisement .left .content-bottom{height: 50%;background-repeat:no-repeat;background-size: contain;width: 100%; background-position: center center;}
+.my_advertisement .left .content{height: 100%;background-repeat:no-repeat;background-size: contain;width: 100%;background-color: white;}
+.my_advertisement .left .content div.advertisement {height: 100%;background-repeat:no-repeat;background-size: contain;width: 100%;background-color: white;background-position: center center;}
+
+.my_advertisement .right{float: left;width: 50%;position: relative;height: 100%}
+.my_advertisement .right .content{height: 100%;background-repeat:no-repeat;background-size: contain;width: 100%;background-color: white;}
+.my_advertisement .right .content div.advertisement { height: 100%;background-repeat:no-repeat;background-size: contain;width: 100%;background-color: white;background-position: center center; }
+
+
+
+.my_advertisement div.advertisement {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    background-color: white;
+    background-position: center center;
+}*/
+.ads-block{
+    height: 180px;
+}
+.advertisement{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: center center;
+    height: 180px;
+}
+.one-block{
+    background-size: cover !important;
+}
+
+
+.carousel-indicators li{background-color: rgba(99, 107, 255, 0.34) !important;}
+.carousel-indicators .active { background-color: #5b64ff !important; }
+.carousel-control-next{  }
+
+
+.circle > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    vertical-align: middle;
+    height: 100%;
+}
+

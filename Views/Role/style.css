@@ -1,0 +1,21 @@
+ul.x2-list li .member-image, ul.x2-list li .approve{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: .7px solid #b8b6c7;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    padding: 2px;
+    animation-name: club-logo-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes club-logo-in {
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+
+

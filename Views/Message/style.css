@@ -1,0 +1,14 @@
+.btn-action{
+    border: 1px solid #545454;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.btn-action:active{
+    border: 1px solid #545454;
+    background-color: red;
+}
+
+.message-active { color: #414440; }
+.message-active i.message-status{ color: #007bff; }
+.message-inactive { color: #aaadaa; }
+.message-inactive i.message-status { color: #aaadaa; }

@@ -1,0 +1,1 @@
+direk Anfrage icin belirlenen Filtreden Donen Sonuclar

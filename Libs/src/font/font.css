@@ -1,0 +1,42 @@
+@font-face {
+    font-face-name: 'ncaa';
+    src: url('ncaa/ncaabbca.ttf') format('truetype');
+}
+.font-ncaa{
+    font-family: 'ncaa';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 22px;
+
+}
+
+
+@font-face {
+    font-face-name: 'military';
+    src: url(http://app.my-team-manager.eu/Libs/src/font/ncaa/ncaabbca.ttf) format('truetype');
+}
+
+.font-military{
+    font-family: 'military';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 22px;
+
+}
+
+.font-impact{
+    font-family: Impact;
+}
+
+.font-arial-narrow{
+    font-family: "Arial Narrow";
+
+}

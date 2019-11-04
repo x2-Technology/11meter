@@ -1,0 +1,23 @@
+RewriteEngine On
+
+# Eger Domain Uzantisi yoksa ve www ile baslamiyorsa
+#RewriteCond %{HTTP_HOST} iroc-client.adler-gruppe\.com/ [NC]
+# Eger Domain Uzantisi yoksa ve www ile basliyorsa
+#RewriteCond %{HTTP_HOST} ^(.*)iroc-client.adler-gruppe\.com/ [NC]
+#RewriteRule ^(.*)$ /Home/!/index [L,R=301]
+
+#redirect if controller not isset
+RewriteCond %{REQUEST_URI} !^/.
+RewriteRule ^(.*)$ /Sign/in/index [NC,L]
+
+#RewriteCond %{REQUEST_URI} !^/.
+#RewriteRule ^(.+)$ /Home/_start/index/ [NC,L]
+
+#Domain Arkasina yazilan utantiyi Klasor seklinde formatla
+# domain/Controller/namespace/method/parameters
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.+)$ /index.php?url=$1 [QSA,L]
+

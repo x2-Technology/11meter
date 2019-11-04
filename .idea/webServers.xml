@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f3c1c899-b130-4cd9-b89c-d29528ec3672" name="11meter.app" url="http://home338570601.1and1-data.host">
+        <fileTransfer host="home338570601.1and1-data.host" port="22" rootFolder="/app" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

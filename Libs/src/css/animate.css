@@ -1,0 +1,16 @@
+@keyframes wobbles {
+
+    0%  { margin-left: 0%; }
+    50%  { margin-left: -1%; }
+    100%  { margin-left: 1%; }
+
+}
+
+.wobbles{
+    animation: wobbles .110s ease ;
+    animation-iteration-count: 3;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+
+}

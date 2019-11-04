@@ -1,0 +1,834 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media (max-device-width: 400px){
+
+
+
+}
+    
+
+
+/*BODY*/
+
+/*View Select disabled */
+*:not(input):not(textarea){/*-webkit-touch-callout: none;-webkit-user-select: none; /* Disable selection/copy in UIWebView */}
+/*View Select disabled */
+html{ background-color: #EFEEF3 !important; }
+body{overflow: paged-y; background-color: #EFEEF3 !important;}
+
+
+/*BODY*/
+
+
+
+ul.no-cell-border li{
+    border: none !important;
+}
+
+li.no-cell-border{
+    border: none !important;
+}
+
+/* TABLE VIEW */
+ul.x2-list {
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 !important;
+    display: table;
+    width: 100%;
+    margin: 0 !important;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* TABLE VIEW ONLY CELL TOP BORDER */
+ul.x2-list > li {
+    border-top: .7px solid rgba(224, 219, 228, 1) !important;
+}
+
+/* TABLE VIEW FIRST CHILD ELEMENT TOP BORDER ABSOLUTE NONE */
+ul.x2-list li:first-of-type:not(.cell) {
+    border-top: none !important;
+}
+
+
+
+/* TABLE VIEW LAST CHILD ELEMENT TOP BORDER BOTTOM ABSOLUTE */
+ul.x2-list > li:last-child{
+    border-bottom: .7px solid rgba(224, 219, 228, 1) !important;
+}
+
+ul.x2-list > li.cell.border-bottom{
+    border-bottom: .7px solid rgba(224, 219, 228, 1) !important;
+}
+
+
+
+/* TABLE VIEW SECTION  */
+
+
+/* TABLE VIEW DEFAULT SECTION */
+ul.x2-list li.section{
+    padding: 10px 15px 10px 15px;
+    font-family: "Arial", Arial, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    min-height: 36px;
+    background-color: #efeef3;
+    color: #585856;
+}
+
+ul.x2-list > li.section.group-header:first-child{
+    border-top:none !important;
+}
+
+ul.x2-list li.section.group-header{
+    border-top:1.5px solid rgba(224, 219, 228, 1) !important;
+    display: table;
+}
+
+
+
+
+/* TABLE VIEW SECTION IOS */
+ul.x2-list li.section.ios{
+    background-color: #efeef3;
+    color: #585856;
+    text-shadow: .7px .7px 1px #fbfaff;
+    border-bottom: .7px solid rgba(198, 194, 202, 0.11);
+
+}
+
+/* TABLE VIEW SECTION COLOR GRAY */
+ul.x2-list li.section.gray{
+    background: #808080;
+    color: #585856;
+    background: -moz-linear-gradient(left, #666666 0%, #7e7e7e 100%);
+    background: -webkit-linear-gradient(left, #666666 0%,#7e7e7e 100%);
+    background: linear-gradient(to right, #989898, #a7a7a7);
+    text-shadow: .7px .7px 1px #CCCCCC;
+}
+
+/* TABLE VIEW SECTION COLOR YELLOW */
+ul.x2-list li.section.yellow{
+    background: #807f03;
+    color: #585702;
+    background: -moz-linear-gradient(left, #656602 0%, #7e7d03 100%);
+    background: -webkit-linear-gradient(left, #666603 0%, #7e7703 100%);
+    background: linear-gradient(to right, #989604, #a7a305);
+    text-shadow: .7px .7px 1px #ccc208;
+    font-weight: bold;
+}
+
+/* TABLE VIEW SECTION COLOR BLUE */
+ul.x2-list li.section.blue{
+    background: #021980;
+    color: #019694;
+    background: -moz-linear-gradient(left, #000666 0%, #00037e 100%);
+    background: -webkit-linear-gradient(left, #010c66 0%, #000a7e 100%);
+    background: linear-gradient(to right, #010c98, #020fa7);
+    text-shadow: .7px .7px 1px #0004cc;
+    font-weight: bold;
+}
+
+/* TABLE VIEW SECTION COLOR RED */
+ul.x2-list li.section.red{
+    background: #800306;
+    color: #580103;
+    background: -moz-linear-gradient(left, #660008 0%, #7e0206 100%);
+    background: -webkit-linear-gradient(left, #660007 0%, #7e0207 100%);
+    background: linear-gradient(to right, #980208, #a7030b);
+    text-shadow: .7px .7px 1px #cc0305;
+    font-weight: bold;
+}
+
+/* TABLE VIEW SECTION COLOR GREEN */
+ul.x2-list li.section.green{
+    background: #058008;
+    color: #045805;
+    background: -moz-linear-gradient(left, #04660a 0%, #057e09 100%);
+    background: -webkit-linear-gradient(left, #086604 0%, #057e06 100%);
+    background: linear-gradient(to right, #0e9806, #10a707);
+    text-shadow: .7px .7px 1px #13cc06;
+    font-weight: bold;
+}
+
+
+/* TABLE VIEW SECTION WITH A ELEMENT */
+ul.x2-list li.section > a {
+    display: inline-block;
+    width: 100%;
+}
+
+/* TABLE VIEW SECTION WITH BADGE */
+
+ul.x2-list li.section.x2-badge:after{
+    content: attr(data-badge-value);
+    float: right;
+    background: #bcbbbc;
+    padding: 0 6px 0 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: table-cell;
+    border: .7px solid #86888a;
+    color: #8b888a;
+    text-shadow: 1px 1px 1px #cecece;
+}
+
+ul.x2-list li.section > label{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* END */
+
+/* TABLE VIEW CELL WITH SEARCH */
+li.section.x2-table-search{
+    position: relative;
+    background-color: #d1d1d1 !important;
+    display: table;
+    padding: 7px 0 7px 7px !important;
+
+}
+
+li.section.x2-table-search > div > div{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 35px;
+    display: table;
+    width: 100%;
+    background: white;
+}
+li.section.x2-table-search > div > div::before {
+    font-family: 'icomoon', serif !important;
+    content: '\eb42';
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;
+}
+li.section.x2-table-search > div > div > input{
+    border: none !important;
+    width: 100%;
+    font-size: 18px;
+    height: 100%;
+    display: table-cell;
+}
+li.section.x2-table-search > button {
+    background-color: transparent;
+    background: none;
+    width: 100%;
+    margin-left: 0;
+    height: 25px;
+    padding: 0;
+    color: blue;
+    border: none;
+    /* position: absolute; */
+    font-size: 18px;
+}
+/* END */
+
+
+
+
+/* TABLE VIEW CELL ANIMATION */
+@keyframes cell-ltr {
+    from{margin-left: -10px; opacity: 0}
+    to{margin-left: 0; opacity: 1}
+}
+
+/*ul.x2-list li.cell.ltr:nth-child(even){*/
+ul.x2-list li.cell.ltr{
+    animation-name: cell-ltr;
+    animation-duration: .3s;
+    animation-timing-function: ease;
+}
+/*ul.x2-list li.cell.ltr:nth-child(odd){
+    animation-name: cell-ltr;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}*/
+
+/* TABLE VIEW CELL ANIMATION */
+
+/* TABLE VIEW CELL DEFAULT */
+
+
+ul.x2-list li.cell .content-body{
+    padding: 15px 0 15px 10px;
+}
+ul.x2-list li.cell[data-sub-title] .content-body{
+    padding: 10px 0 10px 10px;
+}
+ul.x2-list li.cell{
+
+    background: #ffffff;
+    border: none;
+    min-height: 51px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Arial", Arial, Tahoma, sans-serif !important;
+    color: #343434;
+    width: 100%;
+    display: table;
+    position: relative;
+
+}
+
+/** Li[row] inline Wrapper */
+ul.x2-list li.cell .row-content{
+    background: yellow;
+    height: 100%;
+    width: 100%;
+    display: table-row;
+    margin: auto 0;
+    position: relative;
+}
+ul.x2-list li.cell .row-content .content-action{
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: red;
+}
+ul.x2-list li.cell .row-content .content-action > *{
+    background: rgb(3, 92, 128);
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
+    margin: auto 0;
+    position: relative;
+    /* left: -150px; */
+    text-align: center;
+    border:none;
+}
+
+
+ul.x2-list li.cell .row-content .body-wrapper{
+    background: #ffffff;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
+    margin: auto 0;
+    position: relative;
+    left: 0;
+}
+/** Older Li.cell Element Class Property'S Row Inline Element start from this Element  */
+ul.x2-list li.cell .row-content .body-wrapper .content-body{
+    background: #ffffff;
+    color: #343434;
+    width: 100%;
+    display: table;
+    padding: 10px 0 10px 10px;
+}
+
+
+
+
+ul.x2-list li.cell .content-body:after{
+    padding-right: 10px;
+}
+
+ul.x2-list li.cell .content-body:before{
+    font-family: 'icomoon', serif !important;
+    content: '';
+    display:none;
+}
+
+ul.x2-list li.cell[icon] .content-body:before{
+    font-family: 'icomoon', serif !important;
+    content: "\ " attr(icon);
+    display:table-cell;
+    width: 1%;
+    padding-right: 10px;
+}
+
+    /* TABLE VIEW CELL DEFAULT LABEL */
+ul.x2-list li.cell .content-body label {
+    display: table-cell;
+    vertical-align: middle;
+    /*width: 1%;*/
+}
+ul.x2-list li.cell.form .content-body label {
+    /*width: 1%;*/
+    white-space: nowrap;
+}
+
+    /* TABLE VIEW CELL DEFAULT INPUT */
+ul.x2-list li.cell .content-body input[type=text],
+ul.x2-list li.cell .content-body input[type=email],
+ul.x2-list li.cell .content-body input[type=month],
+ul.x2-list li.cell .content-body input[type=number],
+ul.x2-list li.cell .content-body input[type=search],
+ul.x2-list li.cell .content-body input[type=tel],
+ul.x2-list li.cell .content-body input[type=time],
+ul.x2-list li.cell .content-body input[type=password],
+ul.x2-list li.cell .content-body input[type=color],
+ul.x2-list li.cell .content-body input[type=date]{
+    display: table-cell;
+    vertical-align: middle;
+     font-size: 14px;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    padding: 0 0 0 20px;
+}
+
+/*ul.x2-list li.cell input[type="date"]:after {
+    content: "optional";
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+ul.x2-list li.cell input[type="date"]:focus:after{
+    content: "" !important;
+    display: none !important;
+}*/
+
+
+
+/* TABLE FORM CELL REQUIRED */
+@keyframes show-required { from{opacity: 0}to{opacity: 1} }
+@keyframes hide-required {from{opacity: 1} to{opacity: 0}}
+
+ul.x2-list li.cell.required:not(.disabled) .content-body:after {
+    font-family: 'icomoon', serif !important;
+    content: '';
+    color: rgba(0, 0, 0, .3);
+    vertical-align: middle;
+    width: 1%;
+    /*display: table-cell;*/
+    animation-name: hide-required;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    display: none;
+}
+
+ul.x2-list li.cell.required.in .content-body:after {
+    content: '\ed57';
+    animation-name: show-required;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 1%;
+    color: red;
+}
+
+/* TABLE FORM CELL REQUIRED END */
+
+
+/* TABLE VIEW CELL WITH DISABLED */
+ul.x2-list li.cell.disabled .content-body:after, ul.x2-list li.cell[disabled] .content-body::after  {
+    font-family: 'icomoon', serif !important;
+    color: rgba(0, 0, 0, .3);
+    content: '\eb58';
+    vertical-align: middle;
+    width: 1%;
+    display: table-cell;
+}
+
+ul.x2-list li.cell.disabled .content-body *, ul.x2-list li.cell[disabled] .content-body *{
+    color: rgba(0, 0, 0, .3);
+}
+
+ul.x2-list li.cell .content-body input[type=text][disabled] {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+ul.x2-list li.cell .content-body input[type=text][disabled] {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+
+/* END */
+
+/* TABLE VIEW CELL WITH BUTTON ELEMENT */
+
+ul.x2-list li.cell .content-body > input[type=button], ul.x2-list li.cell > button{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    color: #005dc1;
+}
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH A ELEMENT */
+
+ul.x2-list li.cell .content-body > a{
+    display: table;
+    position: relative; width: 100%;
+    vertical-align: middle;
+    /*border: 1px solid #CCCCCC;*/
+}
+
+    /* TABLE VIEW CELL WITH A ELEMENT DEFAULT ICON ARROW RIGHT */
+ul.x2-list li.cell .content-body > a::after{
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    display: table-cell;
+    vertical-align: middle;
+    width: 25px;
+    text-align: right;
+    padding-right: 10px }
+
+ul.x2-list li.cell:not(.disabled) .content-body > a::after, ul.x2-list li.cell:not(.disabled) .content-body > a.details::after {
+    content: '\edc6' !important;
+}
+
+
+/* TABLE VIEW CELL WITH A ELEMENT CUSTOM ICON ( use html-entity )*/
+ul.x2-list li.cell:not(.disabled) .content-body > a[icon]::after {
+    content: attr(icon) !important; /* Please use attr value html-entity*/
+}
+
+
+ul.x2-list li.cell:not(.disabled) .content-body > a.action-hide:after {
+    content: '' !important;
+}
+
+
+
+    /* TABLE VIEW CELL A ELEMENT WITH SELECT ELEMENT (SELECT ELEMENT NOT SELECTABLE USE ONLY FOR DISPLAY VALUE FOR USER AND VALUE POST FOR FORM POST)*/
+
+/* TABLE VIEW CELL WITH SELECT ELEMENT */
+
+ul.x2-list li.cell .content-body select  { position: relative;
+    margin: 0;width: 100%;font-size: 14px;
+    font-family: inherit;
+    line-height: initial !important;}
+
+ul.x2-list li.cell .content-body select::-ms-expand{ display: none; }
+ul.x2-list li.cell .content-body select{ -webkit-appearance: none;float:left;width: auto;border: none !important;padding: 2px 0 2px 0 !important; }
+ul.x2-list li.cell:not(.disabled) .content-body select[disabled]{ color: #343434 }
+ul.x2-list li.cell .content-body select[dir=rtl] option{ text-align: right }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END */
+
+
+
+/* TABLE VIEW CELL WITH SELECT ELEMENT */
+
+ul.x2-list li.cell.select .content-body { position: relative;
+    margin: 0;width: 100%;font-size: 14px;
+    font-family: inherit;
+    line-height: initial !important;}
+ul.x2-list li.cell.select .content-body:after{
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    content: '\edca';
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;}
+
+ul.x2-list li.cell.select.disabled .content-body:after, ul.x2-list li.cell.select[disabled] .content-body::after  {
+    color: rgba(0,0,0,.3);
+}
+
+ul.x2-list li.cell.select .content-body > select::-ms-expand{ display: none; }
+ul.x2-list li.cell.select .content-body > select{
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid transparent;
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.x2-list li.cell.select .content-body > select[dir=rtl] option{ text-align: right }
+
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH RADIO + CHECKBOX  ELEMENT */
+
+ul.x2-list li.cell .content-body > input[type=radio],
+ul.x2-list li.cell .content-body > input[type=checkbox]{
+    display: none;
+}
+
+ul.x2-list li.cell .content-body > input[type=radio]:checked + label:last-child::after,
+ul.x2-list li.cell .content-body > input[type=checkbox]:checked + label:last-child::after {
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    content: '\ed79';
+    vertical-align: middle;
+    background: inherit;
+    right: 0;
+    float: right;
+    display: table-cell;
+}
+ul.x2-list li.cell .content-body > input:checked + label:not([for='']):last-child::after { width: 25px !important; }
+
+/* END */
+
+/* TABLE VIEW CELL WITH ROUNDED IMAGE + LABEL | WITHOUT LABEL */
+
+ul.x2-list li.cell.illustrated .content-body{
+    padding: 5px 0 5px 10px !important;
+}
+ul.x2-list li.cell.illustrated .content-body img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #b8b6c7;
+    overflow: hidden;
+}
+
+ul.x2-list li.cell.illustrated .content-body label{
+    display: inline;
+    margin-left: 5px;
+}
+
+ul.x2-list li.cell.illustrated .content-body a{
+    display: table;
+}
+
+ul.x2-list li.cell.illustrated .content-body a::after{
+    float: none;
+}
+
+/* END */
+
+/* TABLE VIEW CELL WITH SWITCH + LABEL */
+ul.x2-list li.cell.switch .content-body{padding: 10px 0 10px 10px; !important;} /* Add this class via JS if Inside of Cell Has switch Element */
+ul.x2-list li.cell.switch .content-body .switch{position: relative;width: 54px;height: 32px; float: right; margin-right: 10px;}
+
+ul.x2-list li.cell .content-body .switch > input{display: none;}
+ul.x2-list li.cell .content-body .switch > label::before   { border: 1.5px solid #CCCCCC; /*background: rgb(235, 235, 235);box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);*/content: '';height: 100%;position: absolute;/*opacity: 0.3;*/top:0;left:0;transition: all 0.4s ease-in-out;width: 100%;border-radius: 28px;}
+ul.x2-list li.cell[disabled] .content-body .switch, ul.x2-list li.cell.disabled .switch { margin-right: 10px;}
+ul.x2-list li.cell .content-body .switch > label::after    { border-radius: 16px;/*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);*/background-color: #CCCCCC; content: '';left: 2px;position: absolute;top: 2px;transition: all 0.3s ease-in-out;width: 28px;height: 28px;}
+ul.x2-list li.cell .content-body .switch > input[type="checkbox"]:checked + label::before {/*background: inherit*/;/*opacity: 0.5;*/border: 1.5px solid;}
+ul.x2-list li.cell .content-body .switch > input[type="checkbox"]:checked + label::after {background: inherit;left: 24px;}
+
+/* END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ul.x2-list li.cell > .select{ position: relative; display: table; }
+ul.x2-list li.cell > .select:after{ font-family: 'icomoon' !important;
+    color: #343434;
+    content: '\edca';
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;}
+ul.x2-list li.cell .select > select::-ms-expand{ display: none; }
+ul.x2-list li.cell .select > select{ font-family: "Arial", Arial, Tahoma, sans-serif;
+    color: #343434;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: transparent;
+    -webkit-appearance: none;
+    !* for webkit browsers *!
+    -moz-appearance: none;
+    !* for firefox *!
+    appearance: none;
+    !* for modern browsers *!}
+ul.x2-list li.cell .select > select[dir=rtl] option{ text-align: right }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ul.x2-list > li.cell:first-child{
+    border-top: none;
+!*    border-bottom: .7px solid rgba(224, 219, 228, 1);*!
+}*/
+
+
+
+
+/*ul.x2-list > li.cell{
+    border-top: .7px solid rgba(224, 219, 228, 1) !important;
+}
+
+ul.x2-list > li.cell ~ li.cell{
+    !*border-top: .7px solid rgba(224, 219, 228, 1) !important;*!
+}*/
+
+
+
+/* BROWSER BASE OPTIONS*/
+.x2-check-option .option input[type=radio] + label {
+    border-radius: 20px;
+}
+
+.x2-check-option .option input[type=radio]:checked + label:last-child:after {
+    content: '\ee80';
+}
+/* BROWSER BASE OPTIONS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.x2-list li.section:nth-child(.cell){
+    border-bottom: none;
+}
+
+ul.x2-list li.section.transparent{
+    background:none;
+    color: #585856;
+}
+
+
+/*
+* Distance between 2 Table
+*/
+.clearfix.table-distance-1{
+    min-height: 36px !important;
+}
+
+/* BUTTON GROUP ON BOTTOM ON VIEW */
+
+        .view-wrapper{
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .view-wrapper > .view-body{
+            margin-bottom: -100px;
+            display: table-row;
+            height: 100%;
+        }
+
+        .view-wrapper > .view-footer{
+            padding: 2px 20px 5px 20px;
+        }
+        .view-footer input.x2-mobile-button,
+        .view-footer button.x2-mobile-button,
+        .view-footer a.x2-mobile-button
+        {
+            display: inline-block;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #e8e8e8;
+            background: white;
+            padding: 8px;
+            text-align: center;
+            margin: 5px 0 5px 0;
+        }
+
+        .view-footer input.x2-mobile-button[disabled],
+        .view-footer button.x2-mobile-button[disabled],
+        .view-footer a.x2-mobile-button[disabled]{opacity: .5;}
+
+        .view-footer input.x2-mobile-button.touched,
+        .view-footer button.x2-mobile-button.touched,
+        .view-footer a.x2-mobile-button.touched{opacity: .3;}
+
+/* BUTTON GROUP ON BOTTOM ON VIEW */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ul.x2-list li.cell > .material-switch{ float: right;}
+ul.x2-list li.cell.image-cell{ height: 60px;padding: 10px;}
+ul.x2-list li.cell.image-cell img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: gray;
+    float: left;}
+*/
+
+/* Pretty X2 Switch */
+/*ul.x2-list li.cell-active {background-color: #f9f9f9; !important;}*/
+
+/* Pretty X2 Switch */
+
+
+
+

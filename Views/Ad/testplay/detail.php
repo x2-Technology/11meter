@@ -1,0 +1,1 @@
+AD Detail with Discussion <?= highlight_string(var_export($this->data->pars, true));; ?>

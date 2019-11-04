@@ -1,0 +1,31 @@
+.btn-action{
+    border: 1px solid #545454;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.btn-action:active{
+    border: 1px solid #545454;
+    background-color: red;
+}
+
+.message-active { color: #414440; }
+.message-active i.message-status{ color: #007bff; }
+.message-inactive { color: #aaadaa; }
+.message-inactive i.message-status { color: #aaadaa; }
+
+
+@keyframes imageRotate {
+    from {transform: rotate(0)} to{transform: rotate(360deg)}
+}
+.image-rotate{
+    animation-name: imageRotate;
+    animation-duration: 2s;
+    animation-delay: .3s;
+}
+
+@keyframes showSharedButtons {
+    from {opacity: 0} to{opacity: 1}
+}
+.show-share{
+    animation: showSharedButtons ease 2s forwards;
+}

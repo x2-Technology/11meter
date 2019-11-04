@@ -1,0 +1,72 @@
+
+.plan-picker-day{
+    height: 100px;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+    font-size: 56px;
+    height: 66px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid snow;
+}
+
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+
+}
+
+
+select.plan-picker{
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+.plan-picker{
+    overflow: hidden;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+.plan-picker select{
+    background: transparent;
+    border: none;
+}
+
+.plan-picker .plan-picker-header{
+    background-color: #2a2a2a;
+    color: white;
+    opacity: .7;
+}
+
+
+.role-icons {
+    display: inline-block;
+    padding: 2px;
+}
+
+.role-icons i {
+    border-radius: 20px;
+    border: 1px solid;
+    display: inline-block;
+    padding: 6px;
+    float: left;
+}
+
+.role-icons i.success {color: green; background-color: greenyellow;}
+.role-icons i.danger {color: #8b1f76; background-color: red;}
+.role-icons i.danger span{color: #dfd41a; background-color: red;}
+.role-icons i.warning {color: #9a9a00; background-color: yellow;}
+.role-icons i.disabled {color: #c3c2c7; background-color: #e0dfe4;}
+.role-icons i.info {color: #2379c7; background-color: #8cdce4;}
+
+
+/* Pretty Member Image Element */
+ul.x2-list li .member-image, ul.x2-list li .member-image{width: 100px;height: 100px;border-radius: 100px;border: 1px solid #b8b6c7; position: relative;overflow: hidden;margin: auto;}
+ul.x2-list li image.s100, ul.x2-list li img.s100{ width: 100%;height: 100%;border-radius: 100px;border: none;position: absolute;left: 0;}
+ul.x2-list li .member-image:after, ul.x2-list li .member-image:after{width: 100px;height: 25px;left: 0;content: "Bearbeiten";background-color: #202020;color: rgb(238, 238, 238);position: absolute;bottom: 0;padding-top: 2px;}
+/* END */
+

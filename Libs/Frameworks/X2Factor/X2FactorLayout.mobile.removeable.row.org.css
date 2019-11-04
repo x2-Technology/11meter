@@ -1,0 +1,506 @@
+/* TABLE VIEW CELL ANIMATION */
+@keyframes cell-ltr {
+    from{margin-left: -10px; opacity: 0}
+    to{margin-left: 0; opacity: 1}
+}
+
+/*ul.x2-list li.cell.ltr:nth-child(even){*/
+ul.x2-list li.cell.ltr{
+    /*animation-name: cell-ltr;
+    animation-duration: .3s;
+    animation-timing-function: ease;*/
+}
+
+
+ul.x2-list li.cell.removeable[data-sub-title]{
+    padding: 10px 0 10px 10px;
+}
+ul.x2-list li.cell.removeable { padding: 0 !important ;
+    background: #ffffff;
+    border:none;
+    min-height: 51px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Arial", Arial, Tahoma, sans-serif !important; color: #343434;
+    vertical-align: middle;
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    display: table;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+ul.x2-list li.cell:hover{
+    background: #CCCCCC;
+}
+
+
+ul.x2-list > li {
+    border-top: 1px solid rgba(224, 219, 228, 1) !important;
+}
+
+ul.x2-list > li.border-bottom {
+    border-bottom: 1px solid rgba(224, 219, 228, 1) !important;
+    z-index: 1 !important;
+}
+
+ul.x2-list li.cell.removeable .row-body:after {
+    padding-right: 10px;
+}
+
+ul.x2-list li.cell.removeable .row-body:before {
+    font-family: 'icomoon', serif !important;
+    content: '';
+    display: none;
+}
+
+ul.x2-list li.cell.removeable .row-body[icon]:before {
+    font-family: 'icomoon', serif !important;
+    content: "\ " attr(icon);
+    display: table-cell;
+    width: 1%;
+    padding-right: 10px;
+}
+
+/* TABLE VIEW CELL DEFAULT LABEL */
+ul.x2-list li.cell.removeable label {
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.x2-list li.cell.removeable:not(.form) label {
+    width: 100%;
+}
+ul.x2-list li.cell.removeable.form label {
+    /*width: 1%;*/
+}
+
+
+/* TABLE VIEW CELL DEFAULT INPUT */
+ul.x2-list li.cell.removeable .row-body input[type=text],
+ul.x2-list li.cell.removeable .row-body input[type=email],
+ul.x2-list li.cell.removeable .row-body input[type=number],
+ul.x2-list li.cell.removeable .row-body input[type=search],
+ul.x2-list li.cell.removeable .row-body input[type=tel],
+ul.x2-list li.cell.removeable .row-body input[type=password],
+ul.x2-list li.cell.removeable .row-body input[type=color],
+
+ul.x2-list li.cell.removeable .row-body input[type=month],
+ul.x2-list li.cell.removeable .row-body input[type=time],
+ul.x2-list li.cell.removeable .row-body input[type=date]
+{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    outline: none !important;
+    padding: 0 0 0 20px;
+    background-color: transparent;
+}
+
+ul.x2-list li.cell:not(.removeable) input[type=month],
+ul.x2-list li.cell:not(.removeable) input[type=time],
+ul.x2-list li.cell:not(.removeable) input[type=date],
+ul.x2-list li.cell:not(.removeable) input[type=week]{
+    /*-webkit-appearance: menulist-button;
+    border: 1px solid red;*/
+}
+
+
+
+ul.x2-list li.cell.required:not(.disabled).removeable .row-body:after {
+    font-family: 'icomoon', serif !important;
+    content: '';
+    color: rgba(0, 0, 0, .3);
+    vertical-align: middle;
+    width: 1%;
+    /*display: table-cell;*/
+    animation-name: hide-required;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    display: none;
+}
+
+ul.x2-list li.cell.required.in.removeable .row-body:after {
+    content: '\ed57';
+    animation-name: show-required;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 1%;
+    color: red;
+}
+
+/* TABLE FORM CELL REQUIRED END */
+
+
+/* TABLE VIEW CELL WITH DISABLED */
+ul.x2-list li.cell.disabled.removeable .row-body:after, ul.x2-list li.cell[disabled].removeable .row-body::after {
+    font-family: 'icomoon', serif !important;
+    color: rgba(0, 0, 0, .3);
+    content: '\eb58';
+    vertical-align: middle;
+    width: 1%;
+    display: table-cell;
+}
+
+ul.x2-list li.cell.disabled.removeable .row-body *, ul.x2-list li.cell[disabled].removeable .row-body * {
+    color: rgba(0, 0, 0, .3);
+}
+
+ul.x2-list li.cell.removeable .row-body input[type=text][disabled] {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+ul.x2-list li.cell.removeable .row-body input[type=text][disabled] {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+
+/* END */
+
+/* TABLE VIEW CELL WITH BUTTON ELEMENT */
+
+ul.x2-list li.cell.removeable .row-body > input[type=button], ul.x2-list li.cell.removeable .row-body > button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    color: #005dc1;
+}
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH A ELEMENT */
+
+ul.x2-list li.cell.removeable .row-body > a {
+    display: table;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    /*border: 1px solid #CCCCCC;*/
+}
+
+/*ADDITIONAL ICON IN ROW (CELL)*/
+ul.x2-list li.cell.removeable .additional-icon{
+
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 21px;
+    text-align: left;
+    padding:0 5px 0 5px;
+    /*color: red;*/
+
+}
+
+/* TABLE VIEW CELL WITH A ELEMENT DEFAULT ICON ARROW RIGHT */
+ul.x2-list li.cell.removeable .row-body > a::after {
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    display: table-cell;
+    vertical-align: middle;
+    width: 25px;
+    text-align: right;
+    padding-right: 10px
+}
+
+ul.x2-list li.cell:not(.disabled).removeable .row-body > a::after, ul.x2-list li.cell:not(.disabled).removeable .row-body > a.details::after {
+    content: '\edc6' !important;
+}
+
+
+/* TABLE VIEW CELL WITH A ELEMENT CUSTOM ICON ( use html-entity )*/
+ul.x2-list li.cell:not(.disabled).removeable .row-body > a[icon]::after {
+    content: attr(icon) !important; /* Please use attr value html-entity*/
+}
+
+
+ul.x2-list li.cell:not(.disabled).removeable .row-body > a.action-hide:after {
+    content: '' !important;
+}
+
+
+/* TABLE VIEW CELL A ELEMENT WITH SELECT ELEMENT (SELECT ELEMENT NOT SELECTABLE USE ONLY FOR DISPLAY VALUE FOR USER AND VALUE POST FOR FORM POST)*/
+
+/* TABLE VIEW CELL WITH SELECT ELEMENT */
+
+ul.x2-list li.cell.removeable .row-body select {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: initial !important;
+    background-color: transparent;
+}
+
+ul.x2-list li.cell.removeable .row-body select::-ms-expand {
+    display: none;
+}
+
+ul.x2-list li.cell.removeable .row-body select {
+    -webkit-appearance: none;
+    float: left;
+    width: auto;
+    border: none !important;
+    padding: 2px 0 2px 0 !important;
+}
+
+ul.x2-list li.cell:not(.disabled).removeable .row-body select[disabled] {
+    color: #343434
+}
+
+ul.x2-list li.cell.removeable .row-body select[dir=rtl] option {
+    text-align: right
+}
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH SELECT ELEMENT */
+
+ul.x2-list li.cell.select.removeable .row-body {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: initial !important;
+}
+
+ul.x2-list li.cell.select.removeable .row-body:after {
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    content: '\edca';
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;
+}
+
+ul.x2-list li.cell.select.disabled.removeable .row-body:after, ul.x2-list li.cell.select[disabled].removeable .row-body::after {
+    color: rgba(0, 0, 0, .3);
+}
+
+ul.x2-list li.cell.select.removeable .row-body > select::-ms-expand {
+    display: none;
+}
+
+ul.x2-list li.cell.select.removeable .row-body > select {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid transparent;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ul.x2-list li.cell.select.removeable .row-body > select[dir=rtl] option {
+    text-align: right
+}
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH RADIO + CHECKBOX  ELEMENT */
+
+ul.x2-list li.cell.removeable .row-body > input[type=radio],
+ul.x2-list li.cell.removeable .row-body > input[type=checkbox] {
+    display: none;
+}
+
+ul.x2-list li.cell.removeable .row-body > input[type=radio]:checked + label:last-child::after,
+ul.x2-list li.cell.removeable .row-body > input[type=checkbox]:checked + label:last-child::after {
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    content: '\ed79';
+    vertical-align: middle;
+    background: inherit;
+    right: 0;
+    float: right;
+    display: table-cell;
+}
+
+ul.x2-list li.cell.removeable .row-body > input:checked + label:not([for='']):last-child::after {
+    width: 25px !important;
+}
+
+/* END */
+
+/* TABLE VIEW CELL WITH ROUNDED IMAGE + LABEL | WITHOUT LABEL */
+
+ul.x2-list li.cell.illustrated.removeable .row-body {
+    padding: 5px 0 5px 10px !important;
+}
+
+ul.x2-list li.cell.illustrated.removeable .row-body img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #b8b6c7;
+    overflow: hidden;
+}
+
+ul.x2-list li.cell.illustrated.removeable .row-body label {
+    display: inline;
+    margin-left: 5px;
+}
+
+ul.x2-list li.cell.illustrated.removeable .row-body a {
+    display: table;
+}
+
+ul.x2-list li.cell.illustrated.removeable .row-body a::after {
+    float: none;
+}
+
+/* END */
+
+/* TABLE VIEW CELL WITH SWITCH + LABEL */
+ul.x2-list li.cell.switch.removeable .row-body {
+    padding: 10px 0 10px 10px;
+}
+
+/* Add this class via JS if Inside of Cell Has switch Element */
+ul.x2-list li.cell .switch {
+    position: relative;
+    width: 54px;
+    height: 32px;
+    float: right;
+    margin-right: 10px;
+}
+
+ul.x2-list li.cell.removeable .row-body .switch > input {
+    display: none;
+}
+
+ul.x2-list li.cell.removeable .row-body .switch > label::before {
+    border: 1.5px solid #CCCCCC; /*background: rgb(235, 235, 235);box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);*/
+    content: '';
+    height: 100%;
+    position: absolute; /*opacity: 0.3;*/
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    border-radius: 28px;
+}
+
+ul.x2-list li.cell[disabled].removeable .row-body .switch, ul.x2-list li.cell.disabled.removeable .row-body .switch {
+    margin-right: 10px;
+}
+
+ul.x2-list li.cell.removeable .row-body .switch > label::after {
+    border-radius: 16px; /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);*/
+    background-color: #CCCCCC;
+    content: '';
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: all 0.3s ease-in-out;
+    width: 28px;
+    height: 28px;
+}
+
+ul.x2-list li.cell.removeable .row-body .switch > input[type="checkbox"]:checked + label::before { /*background: inherit*/; /*opacity: 0.5;*/
+    border: 1.5px solid;
+}
+
+ul.x2-list li.cell.removeable .row-body .switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 24px;
+}
+
+
+
+@keyframes to-close {
+    to{left: 0;}
+}
+.to-close{
+    animation-name: to-close;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+/*@keyframes to-open {
+    to{left: -80px;}
+}*/
+.to-open{
+    /*animation-name: to-open;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;*/
+    transition: all 300ms;
+}
+
+/*ul {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background:red;
+    position:relative
+}
+li {
+    background:yellow;
+    padding:0;
+    width:100%;
+    position:relative;
+    height:52px;
+    display:inline-block;
+    overflow:hidden;
+}*/
+
+.row-wrapper{
+    /*background: yellow;*/
+    height: 100%;
+    width: 100%;
+    display: table-row;
+    margin: auto 0;
+}
+.row-body{
+    padding: 15px 0 15px 10px ;
+    background: #ffffff;
+    height: 100%;
+    vertical-align:middle;
+    width: 100%;
+    display: table-cell;
+    margin: auto 0;
+    position:relative;
+    left:0;
+}
+
+.row-action{
+    min-width: 80px;height: 100%;position: absolute;right:0;display: table-cell;z-index: 0;float: left;top: 0;
+}
+
+.row-action > * {
+    background: #b33b30;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    margin: auto 0;
+    position: relative;
+    /* left: -150px; */; text-align: center;
+    border:none;
+    color: white;
+    min-width: 80px;
+}
+
+/*@keyframes to-remove {
+    to{margin-top: -51px !important; opacity:0;}
+}*/
+.to-remove{
+    /*animation-name: to-remove;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    */
+    /*margin-left: -200px;*/
+    opacity: 0;
+    transition: opacity 200ms, margin-top 700ms;
+    /*border: .7px solid transparent !important;*/
+}

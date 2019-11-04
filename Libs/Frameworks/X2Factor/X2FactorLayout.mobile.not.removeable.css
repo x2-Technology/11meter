@@ -1,0 +1,1011 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media (max-device-width: 400px){
+
+
+
+}
+    
+
+
+/*BODY*/
+
+/*View Select disabled */
+*:not(input):not(textarea){/*-webkit-touch-callout: none;-webkit-user-select: none; /* Disable selection/copy in UIWebView */}
+/*View Select disabled */
+html{ background-color: #EFEEF3 !important; }
+
+body{overflow: paged-y;
+    background-color: #EFEEF3 !important;
+}
+
+
+
+.body-bg-white{
+
+}
+
+/*BODY*/
+
+
+
+ul.no-cell-border li{
+    border: none !important;
+}
+
+li.no-cell-border{
+    border: none !important;
+}
+
+/* TABLE VIEW */
+ul.x2-list {
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 !important;
+    display: table;
+    width: 100%;
+    margin: 0 !important;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+
+ul.x2-list li.cell.touchstart{
+    background: #dadad3 !important;
+
+    transition: background-color .1s linear;
+
+}
+ul.x2-list li.cell.touchend{
+    background: white !important;
+
+    transition: background-color .3s linear;
+
+}
+
+
+
+
+/* TABLE VIEW ONLY CELL TOP BORDER */
+ul.x2-list > li:not(.border-top-0):not(.no-cell-border) {
+    border-top: 1px solid rgba(224, 219, 228, 1) !important;
+}
+
+/* TABLE VIEW FIRST CHILD ELEMENT TOP BORDER ABSOLUTE NONE */
+ul.x2-list li:first-of-type:not(.cell) {
+    border-top: none !important;
+}
+
+/* MERGED TABLE VIEW WITH UPPER TABLE VIEW, FIRST CHILD ELEMENT TOP BORDER ABSOLUTE NONE */
+ul.x2-list.merge-with-upper li:first-child {
+    border-top: none !important;
+}
+
+/* TABLE VIEW LAST CHILD ELEMENT TOP BORDER BOTTOM ABSOLUTE */
+ul.x2-list > li:not(.box-no-border):last-child{
+    border-bottom: 1px solid rgba(224, 219, 228, 1) !important;
+}
+
+ul.x2-list > li.cell.border-bottom{
+    border-bottom: 1px solid rgba(224, 219, 228, 1) !important;
+}
+
+
+
+/* TABLE VIEW SECTION  */
+
+
+/* TABLE VIEW DEFAULT SECTION */
+ul.x2-list li.section{
+    padding: 10px 15px 10px 15px;
+    font-family: "Arial", Arial, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    min-height: 36px !important;
+    background-color: #efeef3;
+    color: #585856;
+    display: inline-block;
+}
+
+
+/* TABLE VIEW SECTION IOS */
+ul.x2-list li.section.ios{
+    background-color: #efeef3;
+    color: #585856;
+    text-shadow: .7px .7px 1px #fbfaff;
+    border-bottom: .7px solid rgba(198, 194, 202, 0.11);
+
+}
+
+/* TABLE VIEW SECTION COLOR GRAY */
+ul.x2-list li.section.gray{
+    background: #808080;
+    color: #585856;
+    background: -moz-linear-gradient(left, #666666 0%, #7e7e7e 100%);
+    background: -webkit-linear-gradient(left, #666666 0%,#7e7e7e 100%);
+    background: linear-gradient(to right, #989898, #a7a7a7);
+    text-shadow: .7px .7px 1px #CCCCCC;
+}
+
+/* TABLE VIEW SECTION COLOR YELLOW */
+ul.x2-list li.section.yellow{
+    background: #807f03;
+    color: #585702;
+    background: -moz-linear-gradient(left, #656602 0%, #7e7d03 100%);
+    background: -webkit-linear-gradient(left, #666603 0%, #7e7703 100%);
+    background: linear-gradient(to right, #989604, #a7a305);
+    text-shadow: .7px .7px 1px #ccc208;
+    font-weight: bold;
+}
+
+/* TABLE VIEW SECTION COLOR BLUE */
+ul.x2-list li.section.blue{
+    background: #021980;
+    color: #019694;
+    background: -moz-linear-gradient(left, #000666 0%, #00037e 100%);
+    background: -webkit-linear-gradient(left, #010c66 0%, #000a7e 100%);
+    background: linear-gradient(to right, #010c98, #020fa7);
+    text-shadow: .7px .7px 1px #0004cc;
+    font-weight: bold;
+}
+
+/* TABLE VIEW SECTION COLOR RED */
+ul.x2-list li.section.red{
+    background: #800306;
+    color: #580103;
+    background: -moz-linear-gradient(left, #660008 0%, #7e0206 100%);
+    background: -webkit-linear-gradient(left, #660007 0%, #7e0207 100%);
+    background: linear-gradient(to right, #980208, #a7030b);
+    text-shadow: .7px .7px 1px #cc0305;
+    font-weight: bold;
+}
+
+/* TABLE VIEW SECTION COLOR GREEN */
+ul.x2-list li.section.green{
+    background: #058008;
+    color: #045805;
+    background: -moz-linear-gradient(left, #04660a 0%, #057e09 100%);
+    background: -webkit-linear-gradient(left, #086604 0%, #057e06 100%);
+    background: linear-gradient(to right, #0e9806, #10a707);
+    text-shadow: .7px .7px 1px #13cc06;
+    font-weight: bold;
+}
+
+
+/* TABLE VIEW SECTION WITH A ELEMENT */
+ul.x2-list li.section > a {
+    display: inline-block;
+    width: 100%;
+}
+
+/* TABLE VIEW SECTION WITH A INPUT BUTTON */
+ul.x2-list li.section input.x2-mobile-button {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+    background: white;
+    padding: 8px;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    font-size: 14px;
+}
+ul.x2-list li.section input.x2-mobile-button.touched,
+ul.x2-list li.section input.x2-mobile-button.touched,
+ul.x2-list li.section input.x2-mobile-button.touched{opacity: .3;}
+
+/* TABLE VIEW SECTION WITH BADGE */
+/*ul.x2-list li.section > .x2-badge:after{
+    content: attr(data-value);
+    float: right;
+    background: #02c2ff;
+    padding: 0 6px 0 6px;
+    border-radius: 10px;
+    font-size: 12px
+}*/
+ul.x2-list li.section.x2-badge:after{
+    font-family: "Arial", Arial, Tahoma, sans-serif;
+    content: attr(data-badge-value);
+    /* float: right; */
+    background: #d7d4d9;
+    padding: 0 6px 0 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: table-cell;
+    width: 1%;
+    border: .5px solid #b9b9b9;
+}
+
+ul.x2-list li.section.group-header > label{
+    display: table-cell;
+}
+
+
+/* END */
+
+/* TABLE VIEW CELL WITH SEARCH */
+li.section.x2-table-search{
+    position: relative;
+    background-color: #d1d1d1 !important;
+    display: table !important;
+    padding: 7px 0 7px 7px !important;
+
+}
+
+li.section.x2-table-search > div > div{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 35px;
+    display: table;
+    width: 100%;
+    background: white;
+}
+li.section.x2-table-search > div > div::before {
+    font-family: 'icomoon', serif !important;
+    content: '\eb42';
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;
+}
+li.section.x2-table-search > div > div > input{
+    border: none !important;
+    width: 100%;
+    font-size: 18px;
+    height: 100%;
+    display: table-cell;
+}
+li.section.x2-table-search > button {
+    background-color: transparent;
+    background: none;
+    width: 100%;
+    margin-left: 0;
+    height: 25px;
+    padding: 0;
+    color: blue;
+    border: none;
+    /* position: absolute; */
+    font-size: 18px;
+}
+/* END */
+
+
+
+
+
+/* TABLE VIEW CELL ANIMATION */
+@keyframes cell-ltr {
+    from{margin-left: -10px; opacity: 0}
+    to{margin-left: 0; opacity: 1}
+}
+
+/*ul.x2-list li.cell.ltr:nth-child(even){*/
+ul.x2-list li.cell.ltr{
+    /*animation-name: cell-ltr;*/
+    /*animation-duration: .3s;
+    animation-timing-function: ease;*/
+}
+/*ul.x2-list li.cell.ltr:nth-child(odd){
+    animation-name: cell-ltr;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}*/
+
+/* TABLE VIEW CELL ANIMATION */
+
+/* TABLE VIEW CELL DEFAULT */
+
+
+ul.x2-list li.cell:not(.removeable)[data-sub-title]{
+    /*padding: 10px 0 10px 15px;*/
+}
+ul.x2-list li.cell:not(.removeable) { padding: 15px 0 15px 10px ;
+    background: #ffffff;
+    border:none;
+    min-height: 53px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Arial", Arial, Tahoma, sans-serif !important; color: #343434;
+    vertical-align: middle;
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    display: table;
+
+
+}
+
+ul.x2-list li.cell input[type=button].touched{opacity: .3;}
+
+
+
+
+/*@keyframes touchanimation {
+    from{ background-color: #E2E2D8; }
+    to{ background-color: #ffffff; }
+}*/
+
+/*ul.x2-list li.cell:not(.removeable).touchanimation{
+    background: #e2e2d8 !important;
+    transition: background-color .3s linear;
+    animation-name: touchanimation;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+    animation-duration: .1s;
+}*/
+ul.x2-list li.cell:not(.removeable):active {
+
+   /* background: #e2e2d8 !important;*/
+
+}
+
+
+
+ul.x2-list li.cell:not(.removeable):after{
+    padding-right: 10px;
+}
+
+ul.x2-list li.cell:not(.removeable):before{
+    font-family: 'icomoon', serif !important;
+    content: '';
+    display:none;
+}
+
+ul.x2-list li.cell[icon]:not(.removeable):before{
+    font-family: 'icomoon', serif !important;
+    content: "\ " attr(icon);
+    display:table-cell;
+    width: 1%;
+    padding-right: 10px;
+}
+
+    /* TABLE VIEW CELL DEFAULT LABEL */
+ul.x2-list li.cell:not(.removeable) label {
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.x2-list li.cell:not(.removeable):not(.form) label {
+    width: 100%;
+}
+ul.x2-list li.cell:not(.removeable).form label {
+    /*width: 1%;*/
+}
+
+
+
+/*
+@deprecated
+*/
+ul.x2-list li.cell.form:not(.removeable) label {
+    width: 1%;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+    /* TABLE VIEW CELL DEFAULT INPUT */
+ul.x2-list li.cell:not(.removeable) input[type=text],
+ul.x2-list li.cell:not(.removeable) input[type=email],
+ul.x2-list li.cell:not(.removeable) input[type=number],
+ul.x2-list li.cell:not(.removeable) input[type=search],
+ul.x2-list li.cell:not(.removeable) input[type=tel],
+ul.x2-list li.cell:not(.removeable) input[type=password],
+ul.x2-list li.cell:not(.removeable) input[type=color],
+
+ul.x2-list li.cell:not(.removeable) input[type=month],
+ul.x2-list li.cell:not(.removeable) input[type=time],
+ul.x2-list li.cell:not(.removeable) input[type=date],
+ul.x2-list li.cell:not(.removeable) input[type=week]
+{
+    display: table-cell;
+    vertical-align: middle;
+     font-size: 14px;
+    width: 100%;
+    border: none;
+    outline: none !important;
+    padding: 0 0 0 20px;
+    background-color: transparent;
+}
+ul.x2-list li.cell:not(.removeable) input[type=month],
+ul.x2-list li.cell:not(.removeable) input[type=time],
+ul.x2-list li.cell:not(.removeable) input[type=date],
+ul.x2-list li.cell:not(.removeable) input[type=week]{
+    /*-webkit-appearance: menulist-button;*/
+    /*border: 1px solid red;*/
+}
+
+/*ul.x2-list li.cell:not(.removeable) input[type="date"]:after {
+    content: "optional";
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+ul.x2-list li.cell:not(.removeable) input[type="date"]:focus:after{
+    content: "" !important;
+    display: none !important;
+}*/
+
+
+
+/* TABLE FORM CELL REQUIRED */
+@keyframes show-required { from{opacity: 0}to{opacity: 1} }
+@keyframes hide-required {from{opacity: 1} to{opacity: 0}}
+
+ul.x2-list li:not(.section)::after{
+    font-family: 'icomoon', serif !important;
+}
+
+ul.x2-list li.cell.required:not(.disabled):not(.select):not(.removeable):after {
+    content: '';
+    color: rgba(0, 0, 0, .3);
+    vertical-align: middle;
+    width: 1%;
+    animation-name: hide-required;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    display: none;
+}
+
+ul.x2-list li:not(.removeable):not(.disabled).cell.required.show::after, ul.x2-list li:not(.removeable):not(.disabled).cell[required].show::after{
+    content: '\ed57' !important;
+    animation-name: show-required !important;
+    animation-fill-mode: forwards !important;
+    animation-duration: 2s !important;
+    width: 1% !important;
+    color: red !important;
+}
+
+/* TABLE FORM CELL REQUIRED END */
+
+
+/* TABLE VIEW CELL WITH DISABLED */
+ul.x2-list li.cell.disabled:not(.removeable):after, ul.x2-list li.cell[disabled]:not(.removeable)::after  {
+    color: rgba(0, 0, 0, .3);
+    content: '\eb58' !important;
+    vertical-align: middle;
+    width: 1%;
+    display: table-cell;
+    padding: 0 5px 0 5px;
+}
+
+ul.x2-list li.cell.disabled:not(.removeable) *, ul.x2-list li.cell[disabled]:not(.removeable) *{
+    color: rgba(0, 0, 0, .3);
+}
+
+ul.x2-list li.cell:not(.removeable) input[type=text][disabled] {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+ul.x2-list li.cell:not(.removeable) input[type=text][disabled] {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.x2-list li.show::after {
+    font-family: 'icomoon', serif !important;
+    color: rgba(0, 0, 0, .3) !important;
+    content: '\eb58' !important;
+    vertical-align: middle !important;
+    width: 1% !important;
+    display: table-cell !important;
+}
+
+
+
+/* END */
+
+/* TABLE VIEW CELL WITH BUTTON ELEMENT */
+
+ul.x2-list li.cell:not(.removeable) > input[type=button], ul.x2-list li.cell:not(.removeable) > button{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    color: #005dc1;
+}
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH A ELEMENT */
+
+ul.x2-list li.cell:not(.removeable) > a{
+    display: table;
+    position: relative; width: 100%;
+    vertical-align: middle;
+    /*border: 1px solid #CCCCCC;*/
+}
+
+ul.x2-list li.cell:not(.removeable) > a span.with-badge{
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+}
+
+ul.x2-list li.cell:not(.removeable) > a span.with-badge:after{
+    content: attr(data-badge-value);
+    background-color: blue;
+    border-radius: 100px;
+    padding: 3px 8px;
+    right: 10px;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+ul.x2-list li.cell:not(.removeable) .cell-badge{
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.x2-list li.cell:not(.removeable) .cell-badge:after{
+    content:attr(data-value);
+    background-color: blue;
+    padding: 5px 9px;
+    border-radius: 100px;
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+
+/*ADDITIONAL ICON IN ROW (CELL)*/
+ul.x2-list li.cell:not(.removeable) .additional-icon{
+
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 21px;
+    text-align: left;
+    padding:0 5px 0 5px;
+    /*color: red;*/
+
+}
+
+    /* TABLE VIEW CELL WITH A ELEMENT DEFAULT ICON ARROW RIGHT */
+ul.x2-list li.cell:not(.removeable) > a::after{
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    display: table-cell;
+    vertical-align: middle;
+    width: 25px;
+    text-align: right;
+    padding-right: 10px }
+
+ul.x2-list li.cell:not(.disabled):not(.removeable) > a::after, ul.x2-list li.cell:not(.disabled):not(.removeable) > a.details::after {
+    content: '\edc6' !important;
+}
+
+
+/* TABLE VIEW CELL WITH A ELEMENT CUSTOM ICON ( use html-entity )*/
+ul.x2-list li.cell:not(.disabled):not(.removeable) > a[icon]::after {
+    content: attr(icon) !important; /* Please use attr value html-entity*/
+}
+
+
+ul.x2-list li.cell:not(.disabled):not(.removeable) > a.action-hide:after {
+    content: '' !important;
+}
+
+
+
+    /* TABLE VIEW CELL A ELEMENT WITH SELECT ELEMENT (SELECT ELEMENT NOT SELECTABLE USE ONLY FOR DISPLAY VALUE FOR USER AND VALUE POST FOR FORM POST)*/
+
+/* TABLE VIEW CELL WITH SELECT ELEMENT */
+
+ul.x2-list li.cell:not(.removeable) select  { position: relative;
+    margin: 0;width: 100%;font-size: 14px;
+    font-family: inherit;
+    line-height: initial !important;
+    background-color: transparent;
+}
+
+ul.x2-list li.cell:not(.removeable) select::-ms-expand{ display: none; }
+ul.x2-list li.cell:not(.removeable) select{ -webkit-appearance: none;float:left;width: auto;border: none !important;padding: 2px 0 2px 0 !important; }
+ul.x2-list li.cell:not(.disabled):not(.removeable) select[disabled]{ color: #343434 }
+ul.x2-list li.cell:not(.removeable) select[dir=rtl] option{ text-align: right }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END */
+
+
+
+/* TABLE VIEW CELL WITH SELECT ELEMENT */
+
+ul.x2-list li.cell.select:not(.removeable)  { position: relative;
+    margin: 0;width: 100%;font-size: 14px;
+    font-family: inherit;
+    line-height: initial !important;}
+ul.x2-list li.cell.select:not(.removeable)::after{
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    content: '\edca';
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;}
+
+ul.x2-list li.cell.select.disabled:not(.removeable):after, ul.x2-list li.cell.select[disabled]:not(.removeable)::after  {
+    color: rgba(0,0,0,.3);
+}
+
+ul.x2-list li.cell.select:not(.removeable) > select::-ms-expand{ display: none; }
+ul.x2-list li.cell.select:not(.removeable) > select{
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid transparent;
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.x2-list li.cell.select:not(.removeable) > select[dir=rtl] option{ text-align: right }
+
+
+
+/* END */
+
+
+/* TABLE VIEW CELL WITH RADIO + CHECKBOX  ELEMENT */
+
+ul.x2-list li.cell:not(.removeable) > input[type=radio],
+ul.x2-list li.cell:not(.removeable) > input[type=checkbox]{
+    display: none;
+}
+
+ul.x2-list li.cell:not(.removeable) > input[type=radio]:checked + label:last-child::after,
+ul.x2-list li.cell:not(.removeable) > input[type=checkbox]:checked + label:last-child::after {
+    font-family: 'icomoon', serif !important;
+    color: #343434;
+    content: '\ed79';
+    vertical-align: middle;
+    background: inherit;
+    right: 0;
+    float: right;
+    display: table-cell;
+}
+ul.x2-list li.cell:not(.removeable) > input:checked + label:not([for='']):last-child::after { width: 25px !important; }
+
+/* END */
+
+/* TABLE VIEW CELL WITH ROUNDED IMAGE + LABEL | WITHOUT LABEL */
+
+ul.x2-list li.cell.illustrated:not(.removeable){
+    padding: 5px 0 5px 10px !important;
+}
+ul.x2-list li.cell.illustrated:not(.removeable) img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #b8b6c7;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+ul.x2-list li.cell.illustrated:not(.removeable) label{
+    display: table-cell;
+    margin-left: 5px;
+}
+
+ul.x2-list li.cell.illustrated:not(.removeable) a{
+    display: table;
+}
+
+ul.x2-list li.cell.illustrated:not(.removeable) a::after{
+    float: none;
+}
+
+/* END */
+
+/* TABLE VIEW CELL WITH SWITCH + LABEL */
+ul.x2-list li.cell.switch {padding-top: 10px !important; padding-bottom: 10px !important;}
+ul.x2-list li.cell:not(.removeable) .switch {position: relative;width: 54px;height: 32px; float: right; margin-right: 10px;}
+
+ul.x2-list li.cell:not(.removeable) .switch > input{display: none;}
+ul.x2-list li.cell:not(.removeable) .switch > label::before   {
+    border: 1px solid rgba(123, 126, 124, 0.54);
+    background-color: rgb(255, 255, 255);
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    border-radius: 28px;
+    }
+ul.x2-list li.cell:not(.removeable) .switch > label::after    {
+    border-radius: 16px;
+    background-color: rgb(251, 255, 253);
+    content: '';
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 0 2px #636363;
+    width: 28px;
+    height: 28px;}
+ul.x2-list li.cell[disabled]:not(.removeable):not(.disabled) .switch, ul.x2-list li.cell.disabled .switch { margin-right: 10px;}
+ul.x2-list li.cell:not(.removeable) .switch > input[type="checkbox"]:checked + label::before {
+    border: 1px solid rgb(6, 98, 255);
+    background-color: rgb(247, 255, 250)
+}
+ul.x2-list li.cell:not(.removeable) .switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;left: 24px;
+    background-color: rgb(6, 98, 255);
+    box-shadow: -1px 0 2px #636363;
+}
+
+/* For Disabled */
+ul.x2-list li.cell:not(.removeable).disabled .switch > label::before,
+ul.x2-list li.cell:not(.removeable).disabled .switch > input[type="checkbox"]:checked + label:before{
+    border: 1.5px solid rgba(128, 128, 128, 0.4);
+    background-color: rgb(226, 226, 226);
+}
+ul.x2-list li.cell:not(.removeable).disabled .switch > label::after,
+ul.x2-list li.cell:not(.removeable).disabled .switch > input[type="checkbox"]:checked + label:after{
+    background-color: rgba(128, 128, 128, 0.4);
+}
+    /* END */
+
+/* ROW IMAGE */
+ul.x2-list li.cell > div.row-image{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* ROW IMAGE */
+
+/* ROW TABLE FOR CUSTOMIZE CONTENT */
+ul.x2-list li.cell table.row-table{ font-size: .7em; width: 100% }
+ul.x2-list li.cell table.row-table td{ padding: .1em; }
+ul.x2-list li.cell table.row-table td.label{ width: 1%; font-weight: bold; }
+/* ROW TABLE FOR CUSTOMIZE CONTENT */
+
+
+
+/**
+ *  CELL VERTICAL BAR
+ */
+.cell-vertical-bar {
+    position: relative;
+}
+.cell-vertical-bar::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    display: table-cell;
+
+}
+.cell-vertical-bar-blue::after{
+    background-color: blue;
+    border: 1px solid whitesmoke;
+}
+.cell-vertical-bar-red::after{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ul.x2-list li.cell > .select{ position: relative; display: table; }
+ul.x2-list li.cell > .select:after{ font-family: 'icomoon' !important;
+    color: #343434;
+    content: '\edca';
+    display: table-cell;
+    vertical-align: middle;
+    width: 1%;}
+ul.x2-list li.cell .select > select::-ms-expand{ display: none; }
+ul.x2-list li.cell .select > select{ font-family: "Arial", Arial, Tahoma, sans-serif;
+    color: #343434;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: transparent;
+    -webkit-appearance: none;
+    !* for webkit browsers *!
+    -moz-appearance: none;
+    !* for firefox *!
+    appearance: none;
+    !* for modern browsers *!}
+ul.x2-list li.cell .select > select[dir=rtl] option{ text-align: right }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ul.x2-list > li.cell:first-child{
+    border-top: none;
+!*    border-bottom: .7px solid rgba(224, 219, 228, 1);*!
+}*/
+
+
+
+
+/*ul.x2-list > li.cell{
+    border-top: .7px solid rgba(224, 219, 228, 1) !important;
+}
+
+ul.x2-list > li.cell ~ li.cell{
+    !*border-top: .7px solid rgba(224, 219, 228, 1) !important;*!
+}*/
+
+
+
+/* BROWSER BASE OPTIONS*/
+.x2-check-option .option input[type=radio] + label {
+    border-radius: 20px;
+}
+
+.x2-check-option .option input[type=radio]:checked + label:last-child:after {
+    content: '\ee80';
+}
+/* BROWSER BASE OPTIONS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.x2-list li.section:nth-child(.cell){
+    border-bottom: none;
+}
+
+ul.x2-list li.section.transparent{
+    background:none;
+    color: #585856;
+}
+
+
+/*
+* Distance between 2 Table
+*/
+.clearfix.table-distance-1{
+    min-height: 36px !important;
+}
+
+/* BUTTON GROUP ON BOTTOM ON VIEW */
+
+        .view-wrapper{
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .view-wrapper > .view-body{
+            margin-bottom: -100px;
+            display: table-row;
+            height: 100%;
+        }
+
+        .view-wrapper > .view-footer{
+            padding: 2px 20px 5px 20px;
+        }
+        .view-footer input.x2-mobile-button,
+        .view-footer button.x2-mobile-button,
+        .view-footer a.x2-mobile-button
+        {
+            display: inline-block;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #e8e8e8;
+            background: white;
+            padding: 8px;
+            text-align: center;
+            margin: 5px 0 5px 0;
+        }
+
+        .view-footer input.x2-mobile-button[disabled], .view-footer input.x2-mobile-button.disabled
+        .view-footer button.x2-mobile-button[disabled], .view-footer button.x2-mobile-button.disabled
+        .view-footer a.x2-mobile-button[disabled], .view-footer a.x2-mobile-button.disabled{opacity: .5;}
+
+        .view-footer input.x2-mobile-button.touched,
+        .view-footer button.x2-mobile-button.touched,
+        .view-footer a.x2-mobile-button.touched{opacity: .3;}
+
+
+        .view-footer button.x2-mobile-button.with-badge{
+            position: relative;
+        }
+        .view-footer button.x2-mobile-button.with-badge:after{
+            content: attr(data-badge-value);
+            float: right;
+            background-color: blue;
+            border-radius: 100px;
+            min-width: 8px;
+            padding: 0 8px;
+            position: absolute;
+            right: 10px;
+            color: whitesmoke;
+        }
+
+
+/* BUTTON GROUP ON BOTTOM ON VIEW */
+
+
+
+
+/**
+    Overwrite Bootstrap 4.0 row property
+ */
+    .row{
+        margin: 0 !important;
+    }

@@ -1,0 +1,111 @@
+table.ad-private{}
+table.ad-private td{padding: .1em}
+
+ul.discussion {
+    width: 100%;
+    list-style: none;
+    padding: 0 !important;
+    background-color: white;overflow: scroll;
+    margin-bottom: 1px !important;
+
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    -webkit-overflow-scrolling:touch;
+    position: absolute;
+
+}
+ul.discussion li{
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+ul.discussion li div span{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #CCCCCC;
+    max-width: 80%;
+}
+
+ul.discussion li div.me span{
+    background-color: #4df180;
+    position: relative;
+    display: table;
+    float: right;
+    margin-right: 10px;
+}
+
+ul.discussion li div.me span:after{
+    font-family: 'icomoon', serif;
+    content: "\ee75";
+    position: absolute;
+    vertical-align: middle;
+    right: -8px;
+    color: #4df180;
+
+
+
+}
+
+ul.discussion li div.partner span{
+    background-color: whitesmoke;
+    position: relative;
+    display: table;
+    float: left;
+    margin-left: 10px;
+}
+
+
+ul.discussion li div.partner span:after{
+    font-family: 'icomoon', serif;
+    content: "\ee75";
+    position: absolute;
+    vertical-align: middle;
+    left: -8px;
+    color: whitesmoke;
+}
+
+#chat-footer{
+    padding: 10px;
+    display: table;
+    width: 100%;
+    background-color: #cccccc;
+    position: absolute;
+    bottom: 0;
+}
+#chat-footer form{
+    margin: 0;
+    padding: 0;
+}
+
+#chat-footer input[type=text]{
+    border: none;
+    padding:5px 10px 5px 10px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+/*#chat-footer a {
+    background-color: transparent;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    position: fixed;;
+}*/
+
+
+
+
+
+.wrapper-chat-button button{
+    padding: 0;
+    border: .7px solid #CCCCCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 20px;
+    color:whitesmoke;
+}
+
+

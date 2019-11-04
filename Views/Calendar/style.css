@@ -1,0 +1,186 @@
+
+/*Overwrite*/
+.ui-datepicker-header{
+    display: none !important;
+}
+/*Overwrite*/
+.ui-datepicker{
+    width: 100%;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+
+.ui-state-default{
+    background-color: white !important;
+}
+.ui-state-active {
+    background-color: transparent !important;
+}
+
+.ui-datepicker-current-day {position: relative;}
+.ui-datepicker-current-day a {color: #454545 !important;}
+.ui-datepicker-current-day:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0c5460;
+}
+.ui-datepicker-today span a{
+    position: relative;
+    z-index: 1;
+    padding-top: 6px;
+    padding-right: 6px;
+    color: white !important;
+    font-weight: bold !important;
+
+}
+.ui-datepicker-today span a:after{
+    content: '';
+    width: 23px;
+    height: 23px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background: red;
+    z-index: -1;
+}
+
+
+table.ui-datepicker-calendar thead {
+    border-bottom: 1px solid #CCC;
+}
+
+table.ui-datepicker-calendar th, table.ui-datepicker-calendar td{
+
+    text-align:center;
+    height: 50px;
+    width: 50px;
+}
+
+table.ui-datepicker-calendar td{border:1px solid #ebebeb;}
+table.ui-datepicker-calendar tr th:first-child, table.ui-datepicker-calendar tr td:first-child{ font-size: 10px; font-weight: normal; width: 10px;}
+table.ui-datepicker-calendar tr td:first-child{ background: #e9f8fa; border:none;}
+table.ui-datepicker-calendar tr:last-child{ border-bottom: 1px solid #ebebeb;}
+
+table.ui-datepicker-calendar td.ui-datepicker-current-day {background-color: #eef3f3;color: #FFF;text-shadow: none; }
+
+
+
+
+
+ul.day-events{border-top: none !important; margin:0 -1em 0 -1em !important;}
+ul.day-events li.ui-first-child:first-child{
+    color: rgba(117, 117, 117, 1);
+    outline: none;
+    border: none;
+    background-image: -webkit-linear-gradient();
+}
+
+
+
+.day-events-wrapper{width: 100%;bottom: 1px;margin: 0;padding: 0;position: absolute;z-index: 9; }
+.day-events-wrapper ul.event-list-with-icon{position: relative;margin: 0;padding: 0;list-style-type: none; width: 15px;margin-bottom: 1px;} /* 15 default for 1 item */
+.day-events-wrapper ul.event-list-with-icon li.event-icon{width: 12px;height:12px;position: relative; border-radius: 100px;
+    margin:1px;
+    float: left;}
+
+.day-events-birthday-icon{position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    color: rgb(98, 255, 5);
+    text-shadow: 1px 1px 2px #494949;
+}
+
+/*td.ui-datepicker-today div{
+
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding: 5px;
+    background-color: red;
+    border-radius: 100px;
+
+}*/
+/*td.ui-datepicker-today div a {
+    color: white;  border:none; border-radius: 100px;
+    text-shadow: none;}*/
+
+/* DAY EVENTS*/
+
+@keyframes event-icon {
+    from{ opacity: 0; } to{opacity: 1; }
+}
+@-webkit-keyframes event-icon {
+    from{ opacity: 0; } to{opacity: 1; }
+}
+
+.list-event-icon-animate{
+    animation-name: event-icon;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;}
+
+.list-event-icon{
+    opacity: 1;
+    width: 10px;height: 10px;float: left;background-color: rgb(252, 157, 35);}
+
+
+
+div.no-result{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: #aaaaaa;
+    background-color: transparent;
+    text-shadow: 1px 1px 1px #fbfbfb;
+    margin-top:-50px;
+
+
+}
+
+
+.gift-icon-for-list{
+
+    background-image: url(../images/gift-hd_small.png);
+    width:30px;
+    height:30px;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+    background-repeat: no-repeat
+
+}
+
+
+.calendar-day-time{ float: right;position: absolute;
+    top: 0;
+    right: 0;margin-top: 10px; }
+.calendar-day-time p { margin: 0;
+    padding:0; font-weight: normal;font-size: 12px; }
+
+
+/* from top to bottom */
+@keyframes row-top-in {from{top: -10px; opacity: 0} to{top: 0; opacity: 1}}
+@keyframes row-top-out {from{top: 0; opacity: 1} to{top: 7px; opacity: 0} }
+.list-top-in    {animation-name: row-top-in;    animation-duration: .3s;    animation-fill-mode: forwards;}
+.list-top-out   {animation-name: row-top-out;   animation-duration: .3s;    animation-fill-mode: forwards;}
+.day-detail-events-header{position: absolute;left: 0;top: 0;}
+
+/* from left to right */
+@keyframes row-left-in {from{left: -30px; opacity: 0} to{left: 0; opacity: 1}}
+@keyframes row-right-out {from{left: 0; opacity: 1} to{left: 30px; opacity: 0} }
+.list-left-in    {animation-name: row-left-in;    animation-duration: .5s;    animation-fill-mode: forwards;}
+.list-right-out   {animation-name: row-right-out;   animation-duration: .3s;    animation-fill-mode: forwards;}
+.day-events-event{position: absolute;left: 0;top: 0;}

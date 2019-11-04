@@ -1,0 +1,478 @@
+{
+
+  "lang":"English",
+  "lang_flag":"en",
+
+  "date":"Date",
+  "name":"Name",
+  "surname":"Surname",
+  "company":"Company",
+  "contact_person":"Contact person",
+  "register_title":"See for yourself why millions of people love iroc - Sign up for free",
+  "register_big_title":"Register your company easy and quick",
+  "business_registration":"Business registration",
+  "register":"Register",
+
+  "missing_certificate_prefix":"Missing data, certificate middle fix code<br />Cetificate middle fix code using by certificate numbering",
+
+  "edityoursettings":"Edit your settings!",
+
+  "login":"Login",
+  "logout":"Logout",
+  "signin":"Sign in",
+  "signup":"Sign up",
+  "keep_logign":"Keep me logged-in",
+
+  "settings":"Settings",
+
+  "number":"Number",
+  "nr":"Nr",
+  "en":"en",
+  "de":"de",
+  "trade":"Trade",
+  "address":"Address",
+  "communication":"Communication",
+
+
+  "street":"Street",
+  "postcode":"Postcode",
+  "town":"Town",
+  "country":"Country",
+
+  "tel":"Tel",
+  "fax":"Fax",
+  "http":"http://",
+  "email":"Email",
+
+  "user":"User",
+  "username":"Username",
+  "email_as_username0":"It Is used as username.",
+  "email_as_username":"Email-address is the same as username",
+  "password":"Password",
+  "password_confirm":"Password confirmation",
+  "password_forgot":"Forget the password",
+  "current_password":"Current password",
+  "password_recovery":"Password Recovery",
+  "admin_email_address":"Admin email address",
+  "new_client":"new client",
+  "client":"client",
+  "client_list":"Client List",
+
+  "remember_me":"remember me!",
+  "with":"with",
+  "no_account":"Don't have an account",
+
+  "conditions":"agb",
+  "conditions_text":"With the registration I agree with the [conditions] and data protection of iroc.de.",
+
+  "save":"Save",
+
+  "error_uname_or_pass":"Username or password incorrect!",
+
+  "contact_with_administrator":"Contact with administrator",
+
+  "trading":"Traiding",
+  "application_nr":"Apllication number",
+  "application_date":"Application date",
+  "application_town":"Application Town",
+  "application_country":"Application Country",
+
+  "salutation":"Salutation",
+  "mrs":"Mrs",
+  "sir":"Sir",
+
+  "data":"Data",
+  "list":"List",
+  "status":"Status",
+  "message":"Message",
+  "messages":"Messages",
+  "message_for_certificate_status":"Nachricht für Zertifikatstatus",
+  "certificate":"Certificate",
+  "upload":"Upload",
+  "send":"Send",
+  "send_password":"Send Password",
+  "submenu":"Submenu",
+  "new":"New",
+
+  "subject":"Subject",
+  "from":"From",
+  "to":"To",
+
+  "personal_data":"Personal data",
+  "security":"Security",
+  "personal":"Personal",
+
+  "account":"Account",
+
+
+  "canupload":"User can the certificate upload!",
+
+  "tool":"Tool",
+  "general_data":"General data",
+
+  "send_activation_code":"Send Activation Code",
+  "activation":"Aktivation",
+  "secret_code":"Secret Code",
+  "secret_code_desc":"Please do not share or forget this code. You need this code for specific process",
+
+  "info":"Info",
+
+  "you_have_not_message":"You have not message!",
+
+  "are_you_sure":"Are you sure?",
+  "send_password_message":"Do you want to send the new password?",
+  "sending":"Sending",
+
+  "are_you_sure_you_want_to_save":"Are you sure you want to save?",
+  "are_you_want_to_send_new_password":"Are you want to send the new Password?",
+  "send_new_password":"Send new Passwort",
+  "send_new_password_info":"Process, will the passwort new generate!",
+
+
+
+  "delete_with_risk":"This process requires risk, all information will be deleted!",
+
+  "activation_code":"Activation code",
+  "are_you_want_to_send_activation_code":"Are you want to send the activation code?",
+  "are_you_want_to_send_confirmation_link":"Are you want to send the E-mail confirmation link?",
+  "confirmation_link":"Confirmation link",
+  "confirmation_link_sent_to":"Confirmation link sent to",
+
+  "ok":"Ok",
+  "cancel":"Cancel",
+
+  "captcha_confirmation":"Please type in the CAPTCHA code!",
+
+  "thank_you_your_registration":"Thank you for your registration",
+
+  "your_request_already_posted_successfully":"Your request already posted successfully!",
+
+
+  "error_occurred":"Error Occurred",
+  "success":"Success",
+
+  "close":"Close",
+  "is_already_exist":"is already exist! ",
+  "user_already_exist":"This username isn't available. Please enter a username that isn't already taken.",
+  "registered_user":"Registered user!",
+
+  "certificate_codignation_key":"Certificate codignation key",
+
+  "required_filed_must_be_filled":"Required filed must be filled!",
+
+
+  "sent_to": "sent to",
+
+  "wait_for_confirmation":"Waiting for confirmation!",
+
+  "your_activation_code":"Your Activation Code",
+
+  "activate":"Activate",
+  "activate_simple":"Activate your company simple and safety",
+  "activate_simple_small":"Process success with Secret and Activation code!",
+  "activation_error":"Error occurred!",
+  "activation_error_message":"Error either Activation code or Secret code!",
+  "activation_success_message":"Your company activated successfully!",
+
+  "is_confirmed":"Company confirmed!",
+  "is_not_confirmed":"Company not yet confirmed!",
+
+  "is_active":"Company active!",
+  "is_not_active":"Company not active!",
+  "wait_while_company_activation":"Wait while company activation!",
+
+  "confirmation":"Confirmation",
+
+  "reset_your_password":"Reset your password",
+  "new_password":"New Password",
+  "password_updated_successfully":"Password updated successfully",
+  "password_does_not_match":"Password doesn't match",
+  "default_password_not_correct":"Your default password not correct!",
+  "new_password_send":"New Password sent",
+
+
+  "data_saved":"Data saved",
+
+  "company_admin":"Company Admin",
+
+  "active":"Active",
+  "inactive":"Inactive",
+
+  "information_sent_to":"Information sent to",
+
+
+  "welcome_to_iroc":"Welcome to Iroc GmbH",
+
+  "admin":"Admin",
+
+  "error_with_email_sent":"Error occurred with email sent",
+  "success_with_email_sent":"Email sent successfully!",
+
+  "you_have_forgot_your_password_but_problem":"Please enter your e-mail adress with your secret code. You will then receive an e-mail with a link from which you can choose a new password.",
+  "incorrect_username_or_secret_key":"Incorrect username or secret code",
+
+  "create_your_password":"Create your password",
+  "incorrect_token":"Incorrect Token",
+
+
+  "activation_sent_date":"Code sent at",
+  "activation_sender":"Code sender",
+
+
+  "register_will_check_message":"Your data are saved successfully,Wir will the data check and will send the Information.<br />Thank you for your patience and your understanding!",
+
+  "register_date":"Register date",
+  "active_since":"Active since",
+
+
+  "liste":"List",
+
+
+  "next":"Next",
+  "continue":"Continue",
+
+  "birthday":"Birthday",
+
+  "certificate_name":"Certificate name",
+  "certificate_issuer":"Certificate issuer",
+  "date_of_issue":"Date of issue",
+  "date_of_test":"Date of test",
+  "date_of_register":"Date of Register",
+  "certificate_nr":"Certificate Nr",
+  "certificate_history":"Certificate history",
+
+  "certificate_permanent":"Certificate permanent",
+  "date_of_validity":"Date of validity",
+
+
+  "person":"Person",
+  "device":"Device",
+  "machine":"Machine",
+  "file":"File",
+  "remove":"Remove",
+  "delete":"Delete",
+  "trash":"Trash",
+
+  "user_delete":"User delete",
+  "are_you_want_delete_tue_user":"Are you want delete the user?",
+  "user_deleted_successfully":"User deleted successfully!",
+
+  "are_you_sure_you_want_to_delete" :"Are you sure you want to delete?",
+
+
+  "are_you_want_remove_the_item":"Are you want remove the item?",
+  "are_you_want_delete_the_item":"Are you want delete the item?",
+  "item_will_remove":"Item will remove!",
+  "item_preview":"Item preview",
+
+  "iroc_nr_info":"This number is created automatically after registering",
+  "iroc_nr": "Iroc Nr",
+
+
+  "single":"Single",
+  "multi":"multi",
+  "upload_multi_certificate":"Upload multiple certificate",
+
+  "theme":"Theme",
+  "title":"Title",
+
+  "user_data_saved_successfully":"User data saved successfully!",
+
+  "education_from" :"Education from",
+  "education_to" :"Education to",
+  "participation_from" :"Participation from",
+  "participation_to" :"Participation to",
+
+  "document_upload_stop_before_save":"Please save document data, before document Upload",
+  "please_use_this_button":"Please use this button",
+  "no_file_found":"Please select the document",
+
+  "invalid_file":"Invalid file!",
+  "reset":"Reset",
+  "select":"Select",
+  "error_with_safety_card_nr":"Error with Safety card number",
+  "sure_if_is_correct":"please be sure to confirm!",
+
+  "certificate_query":"Certificate query",
+  "search":"Search",
+  "owner":"Owner",
+  "search_as":"Search as?",
+  "back":"Back",
+  "please_select_birthday_or_issueday":"Please select Birthday or Certificate Creation date!",
+  "see_doc":"See Document",
+
+  "see_payment_details":"See payment details",
+
+  "client_see_same_window":"Customer see the same info!",
+
+
+  "gross_price":"Gross price",
+  "net_price":"Net price",
+
+  "remove_certificate_confirmation":"Are you sure you want to delete the Certificate(s)?",
+
+  "logo":"Logo",
+  "file_is_to_big":"File is to big!",
+
+  "valid":"Valid",
+  "soon_ending":"Soon ending!",
+  "expired":"Expired",
+  "exposed":"Exposed",
+  "withdrawn":"Withdrawn",
+  "current":"Current",
+  "certificate_list":"Certificate List",
+  "certificate_upload_for":"Certificate upload for",
+  "single_certificate_upload":"Upload single certificate",
+  "multiple_certificate_upload":"Upload multiple certificate",
+  "add_new_row":"Add new row",
+  "load_with_excel":"Load with excel",
+  "upload_all":"Upload all",
+  "no_uploadable_file_found":"No uploadable file found!",
+
+  "no_history_for_certificate":"No Certificate History Found!",
+  "session_expired":"Session expired please login!",
+  "missing_data_for_row":"Missing data for row",
+  "document_saving_info":"Please wait while the document is being to saving!",
+  "accept_only":"Accept only",
+  "document":"Document",
+  "file_already_exists":"File already exists!",
+  "no_acceptable":"Not acceptable",
+
+  "month":"Month",
+  "year":"Year",
+  "day":"Day",
+  "original_price":"Original Price",
+  "discounted_price":"Discounted Price",
+  "price":"Price",
+  "credit":"Credit",
+  "credit_balance":"Credit balance",
+  "per":"per",
+  "discount":"Discount",
+  "product":"Product",
+  "tax":"Tax",
+  "license_agreement":"License Agreement",
+
+  "payable":"Payable",
+  "remaining_credit":"Remaining Credit",
+
+  "select_your_search_option":"Select your search option",
+  "pay":"Pay",
+  "pay_with_selected_option":"Pay with selected option",
+
+  "select_payment_method":"Please select your payment method!",
+
+  "company_pin":"Company Pin code",
+  "user_pin":"User Pin code",
+  "company_pin_code_entered_info":"They were entered by the Company registration time",
+  "activation_code_info":"This code has been sent to your registered company email",
+
+
+  "open":"Open",
+  "closed":"Closed",
+
+  "please_select_item":"Please select the item!",
+
+  "do_you_approve_payment":"Please don't forget, Approve the paid after bank transfer from ",
+  "request_detect_more_payment_message":"Request detected more payment for self purchase, please see the details from",
+  "approving":"Approving",
+
+  "yes":"Yes",
+  "no":"No",
+
+  "bank":"Bank",
+  "iban":"IBAN",
+  "bic":"BIC",
+  "amount":"Amount",
+  "intended_use":"Intended use",
+
+  "waiting_for_confirmation":"Waiting for confirmation",
+  "payed":"Payed",
+  "confirmed":"Confirmed",
+  "approved":"Approved",
+
+  "base_price":"Grundprise",
+
+  "payment_with":"Payment with",
+  "packet":"Packet",
+  "details":"Details",
+  "total_price":"Total price",
+  "paypal_fee":"PayPal Gebühr",
+  "monthly_price":"Monthly price price",
+  "end_price":"Endprice",
+  "set_as_paid":"Set as paid",
+  "purchased_product":"Purchased product",
+  "inc_tax":"Inclusive with tax",
+  "inc_first_month":"Inclusive first Month",
+  "buyer":"Buyer",
+
+  "monthly":"Monthly",
+  "fix_amount":"Fix amount",
+  "summary":"Summary",
+
+  "product_info":"Product Info",
+
+  "advance":"Payment in Advance",
+  "paypal":"PayPal",
+  "credit card":"Credit card",
+  "bank_data":"Bank Data",
+
+  "showed":"Showed",
+  "banktransfer_details":"Bank transfer details",
+
+  "after_that":"After that",
+  "discount_for_every_offer":"Discount after that every offer",
+
+  "unlimited":"Unlimited",
+  "credit_details":"Credit details",
+
+
+  "purchase":"Purchase",
+
+
+  "over_payment":"Overpayment",
+  "missing_payment":"Missing Payment",
+  "amount_difference":"Difference",
+  "payment_reminder":"Payment reminder",
+  "are_you_want_to_remind_to_pay":"Are you want to remind to pay",
+
+  "open_all":"Open all",
+  "close_all":"Close all",
+
+  "please_pay_this_amount":"Please pay this amount!",
+
+  "bank_transfer":"Bank transfer",
+  "bank_transfer_details":"Bank transfer details",
+  "payment_information":"Payment information",
+  "payment_history":"Payment history",
+  "piggy_bank":"Piggy Bank",
+  "piggy":"Piggy Bank",
+
+  "paid":"Paid",
+  "remaining":"Remaining",
+  "more_payment_to_piggy":"Added as a credit to customer piggy bank!",
+  "confirmatory":"Confirmatory",
+  "payment_method":"Payment method",
+  "payment":"Payment",
+  "payment_with_piggy":"Payment with Piggy bank!",
+
+  "completed":"Completed",
+  "debited":"Debited",
+  "transaction":"Transaction",
+  "checkout":"Checkout",
+
+  "duplicate_entry":"Already registered!",
+  "email_confirmation_mail_title":"Confirm your email",
+
+  "have_not_a_default_value":"have not a default value",
+
+  "incoming":"Incoming",
+  "outgoing":"Outgoing",
+  "answer":"Answer",
+
+  "sender":"Sender",
+  "receiver":"Receiver",
+
+  "you":"You",
+
+  "test":"test"
+}

@@ -1,0 +1,139 @@
+.btn-action{
+    border: 1px solid #545454;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.btn-action:active{
+    border: 1px solid #545454;
+    background-color: red;
+}
+
+.availability-inactive{
+    opacity: .5;
+}
+
+.availability-active{
+    opacity: 1;
+}
+
+
+.meeting-item:first-child{
+    border-top: none !important;
+}
+
+textarea:focus, input:focus{
+    outline: none !important;
+}
+
+
+table.meeting-deep-info {
+    width: 100%;
+}
+table.meeting-deep-info td{
+    position: relative;
+}
+table.meeting-deep-info td:first-child{
+    width: 1%;
+
+}
+
+
+
+/*
+
+
+@keyframes show-page-one {
+    from{left:-100%;opacity: 0} to{left: 0;opacity: 1;}
+}
+@keyframes show-page-two {
+    from{left:0; opacity: 1 } to{left: -100%; opacity: 1;}
+}
+
+
+.show-page-one{
+    -webkit-animation-name: show-page-one;
+    -moz-animation-name: show-page-one;
+    -o-animation-name: show-page-one;
+    animation-name: show-page-one;
+    animation-duration:1s ;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+}
+
+.show-page-two{
+    -webkit-animation-name: show-page-two;
+    -moz-animation-name: show-page-two;
+    -o-animation-name: show-page-two;
+    animation-name: show-page-two;
+
+    animation-duration:1s ;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+}
+
+
+.page-viewer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ul.page-viewer-nav{
+    top: 0;
+    z-index: 99999999;
+    background: white;
+    width: 100% !important;
+    height: 40px;
+    position: static !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+ul.page-viewer-nav li{
+    border-bottom: 2px solid #CCCCCC;
+}
+ul.page-viewer-nav li.active{
+    border-bottom: 2px solid #2098cc;
+}
+ul.page-viewer-nav li:not(:last-child){
+    border-right: 1px solid #CCCCCC;
+}
+ul.page-viewer-nav li a{
+    display: block;
+    padding: .5rem 1rem;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+div.page-viewer-content{
+    position: relative;
+    width: 200%;
+    height: 100%;
+    margin-top: -15px;
+    left: -100%;
+}
+
+
+
+div.page-viewer-content .pane{
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 40px);
+    -webkit-overflow-scrolling:touch;
+    overflow-scrolling: touch;
+    overflow: scroll;
+}
+div.page-viewer-content .pane-one{top: 0;left: 0;}
+div.page-viewer-content .pane-two{top: 0;left: 50%;}*/
